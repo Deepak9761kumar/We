@@ -263,6 +263,180 @@ nav {
   font-size: 17px;
   color: white;
 }
+/* General Promo Section Styling */
+.promo-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Carousel Container */
+.carousel-container {
+  width:63%;
+
+}
+
+.carousel-inner img {
+  width: 35%;
+
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+  color: #fff;
+}
+
+.carousel-caption h3 {
+  background-color: blue;
+  padding: 8px;
+  display: inline-block;
+  font-weight: bolder;
+  color: white;
+  font-size: 20px;
+}
+
+.carousel-caption h2.carousel-title {
+  color:black;
+  font-size: 24px;
+  margin-left: 100px;
+
+}
+
+.learn-more-btn {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.learn-more-btn i {
+  margin-left: 5px;
+}
+
+
+
+.promo-section {
+  display: flex;
+  flex-wrap: wrap;
+
+  align-items: stretch;
+  margin: 20px 0;
+}
+
+
+.right-promo-container {
+
+  display: flex;
+  width: 35%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.carousel-caption {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  top:133;
+
+}
+
+.learn-more-btn {
+  background-color: blue;
+  color:white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.promo-box {
+  
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.common-box {
+  display: flex;
+  
+  align-items: center;
+}
+
+.common-img img {
+  width: 230px;
+  height: 120px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 992px) {
+  .promo-section {
+      flex-direction: column;
+  }
+
+  .carousel-container {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width:100%;
+  }
+  .carousel-inner img {
+    width: 100%;
+  
+  }
+  .right-promo-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+
+  .promo-box {
+      flex: 1 1 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-caption h3 {
+      font-size: 20px;
+  }
+
+  .carousel-caption h2 {
+      font-size: 16px;
+      
+  }
+
+  .learn-more-btn {
+      padding: 8px 15px;
+      font-size: 14px;
+  }
+
+  .common-box {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .common-img img {
+      width: 100%;
+  }
+
+  .promo-box {
+      flex: 1 1 100%;
+  }
+}
 
 
 
@@ -439,6 +613,7 @@ left:35px !important;
 .servicecontent p{
   margin-top: 2px;
 }
+
 .fashion-heading-image{
 width:90%;
 height:200px;
@@ -1291,6 +1466,13 @@ left:47px;
 }
 
 
+.cartItem1{
+  background-color: rgb(238, 233, 233);
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+
 
 
 @media screen and (max-width:768px) {
@@ -1346,7 +1528,7 @@ left:47px;
 
   .dropdownmenu {
     padding: 15.5px;
-    display: block;
+  
     background-color:white;
     
   }
