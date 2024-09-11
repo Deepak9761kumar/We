@@ -379,7 +379,7 @@ nav {
 }
 
 .common-img img {
-  width: 230px;
+  width: 100%;
   height: 120px;
 }
 
@@ -399,14 +399,16 @@ nav {
   
   }
   .right-promo-container {
+    display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 20px;
   }
 
   .promo-box {
       flex: 1 1 calc(50% - 10px);
   }
+ 
 }
 
 @media (max-width: 576px) {
@@ -1486,14 +1488,7 @@ left:47px;
     max-width: 1024px;
 
   }
-  .wrapper .main-container .left-div {
-    display:none;
-
-  }
-  .wrapper .main-container .main-right-div{
-    display:none;
-
-  }
+  
   .wrapper .wraps{
     margin:0;
     padding: 0;
